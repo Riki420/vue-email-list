@@ -13,6 +13,12 @@
 </head>
 <body>
     <div id="app">
+        <div class="container">
+            <h1 class="family-sans">Lista di E-Mail con Vue</h1>
+            <ul class="list-none family-sans" v-if="emailList.length == 10">
+                <li v-for="email in emailList" class="fs-2 mt-2">{{ email }}</li>
+            </ul>
+        </div>
         
     </div>
     <script src="./js/script.js"></script>
