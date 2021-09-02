@@ -19,9 +19,11 @@
         <div class="container">
             <h1 class="family-sans">Lista di E-Mail con Vue</h1>
             <ul class="list-none family-sans" v-if="emailList.length == 10">
-                <li v-for="email in emailList" class="fs-2 mt-2">{{ email }}</li>
+                <li v-for="email in sortedMails" class="fs-2 mt-2">{{ email }}</li>
             </ul>
-            <h1 v-else>  <i class="fas fa-cog fa-spin fs-big"></i></h1>
+            <div v-else>
+                <i class="fas fa-cog fa-spin fs-big"></i>
+            </div>
         </div>
         
     </div>
