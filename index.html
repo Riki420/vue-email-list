@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!--SCRIPT ONLY-->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.9.1/axios.min.js' integrity='sha512-Xk3wWei2TGrsh9kDSBKUMIjw/86sLUvhtnv9f7fOuIwhhiUTKz8szkWkzHthrM5Bb3Bu9idSzkxOrkzhcneuiw==' crossorigin='anonymous'></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    
     <!--CSS ONLY-->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css' integrity='sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==' crossorigin='anonymous'/>
     <link rel="stylesheet" href="./css/style.css">
     <title>Vue email list</title>
 </head>
@@ -18,6 +21,7 @@
             <ul class="list-none family-sans" v-if="emailList.length == 10">
                 <li v-for="email in emailList" class="fs-2 mt-2">{{ email }}</li>
             </ul>
+            <h1 v-else>  <i class="fas fa-cog fa-spin fs-big"></i></h1>
         </div>
         
     </div>
